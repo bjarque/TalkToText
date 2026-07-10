@@ -368,10 +368,15 @@ def clean_message(text):
     return text
 
 
+def capitalize_first_letter(text):
+    if not text:
+        return text
 
+    return text[0].upper() + text[1:]
+    
 def parse_chat(text):
 
-    text = clean_message(text)
+    text = clean_message(text);
 
     lower = text.lower().strip()
 
@@ -420,14 +425,15 @@ def parse_chat(text):
 
             # remove ":" or ","
             message = re.sub(
-                r"^[,:]\s*",
+                r"^[\.\,\:\;\!\?]+\s*",
                 "",
                 message
             )
-
+            
             if message:
-
+                message = capitalize_first_letter(message)
                 return f"{command} {message}"
+
 
             else:
 
@@ -450,6 +456,27 @@ def parse_chat(text):
                 f"/w {parts[1]} {parts[2]}"
             )
 
+
+    return capitalize_first_letter(text)
+
+
+def clean_message(text):
+
+    text = text.strip()
+
+    # Remove trailing punctuation
+    text = re.sub(
+        r"[.!?,;:]+$",
+        "",
+        text
+    )
+
+    # Normalize spaces
+    text = re.sub(
+        r"\s+",
+        " ",
+        text
+    )
 
     return text
 
