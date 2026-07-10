@@ -59,7 +59,8 @@ Install dependencies:
 pip install -r requirements.txt
 
 
-Download whisper.cpp and place files in:
+Download whisper.cpp from https://github.com/ggml-org/whisper.cpp/releases/download/v1.9.1/whisper-cublas-12.4.0-bin-x64.zip and place files in:
+
 
 
 /whisper
@@ -74,7 +75,7 @@ ggml-small.en.bin
 Place it in:
 
 
-/models
+/whisper/models
 
 
 Run:
