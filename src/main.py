@@ -30,11 +30,11 @@ whisper.start()
 print("Ready - hold Mouse5")
 
 
-with open("..\config.json") as f:
+with open("..//config.json") as f:
     config = json.load(f)
 
 
-with open("..\data\wow_words.json") as f:
+with open("..//data//wow_words.json") as f:
     wow_words = json.load(f)
 
 
