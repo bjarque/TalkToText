@@ -1,0 +1,10 @@
+{
+    "sample_rate": 16000,
+    "input_device": 18,
+
+    "whisper_exe": ".\\whisper\\whisper-cli.exe",
+    "model": ".\\whisper\\models\\ggml-base.en.bin",
+
+    "language": "en",
+    "auto_paste": false
+}

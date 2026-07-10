@@ -1,0 +1,6 @@
+{
+    "whisper_server": "http://127.0.0.1:8080",
+    "sample_rate": 16000,
+    "push_to_talk": "mouse5",
+    "auto_paste": true
+}
