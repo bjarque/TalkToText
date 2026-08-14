@@ -70,6 +70,8 @@ Download model:
 
 
 ggml-small.en.bin
+from 
+https://huggingface.co/ggerganov/whisper.cpp/tree/main
 
 
 Place it in:
